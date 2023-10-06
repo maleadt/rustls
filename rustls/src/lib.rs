@@ -61,6 +61,8 @@
 //! [supported by `ring`](https://github.com/briansmith/ring#online-automated-testing).
 //! At the time of writing this means x86, x86-64, armv7, and aarch64.
 //!
+//! [ring-ci-targets]: https://github.com/briansmith/ring/blob/d34858a918b04127d085cdbc20325263bf8fdd36/.github/workflows/ci.yml#L171-L190
+//!
 //! ## Design Overview
 //! ### Rustls does not take care of network IO
 //! It doesn't make or accept TCP connections, or do DNS, or read or write files.

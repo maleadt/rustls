@@ -146,6 +146,17 @@ Rustls uses [`ring`](https://crates.io/crates/ring) for implementing the
 cryptography in TLS. As a result, rustls only runs on platforms
 [supported by `ring`](https://github.com/briansmith/ring#online-automated-testing).
 At the time of writing this means x86, x86-64, armv7, and aarch64.
+||||||| parent of d5d62499 (upgrade to ring 0.17)
+While Rustls itself is platform independent it uses
+[`ring`](https://crates.io/crates/ring) for implementing the cryptography in
+TLS. As a result, rustls only runs on platforms
+supported by `ring`. At the time of writing this means x86, x86-64, armv7, and
+aarch64. For more information see [the supported `ring` CI
+targets](https://github.com/briansmith/ring/blob/9cc0d45f4d8521f467bb3a621e74b1535e118188/.github/workflows/ci.yml#L151-L167).
+
+Rustls requires Rust 1.61 or later.
+
+[ring-ci-targets]: https://github.com/briansmith/ring/blob/d34858a918b04127d085cdbc20325263bf8fdd36/.github/workflows/ci.yml#L171-L190
 
 Rustls requires Rust 1.56 or later.
 
